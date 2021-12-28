@@ -4,21 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link src="style.css" />
-    <title>Momentum</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>momentum</title>
   </head>
-
   <body>
-    <div class="hey">
-      <h1>grab it1</h1>
-    </div>
-    <div class="hey">
-      <h1>grab it2</h1>
-    </div>
-    <div class="hey">
-      <h1>grab it3</h1>
-    </div>
-
-    <script src="app.js"></script>
+    <form id="login-form">
+      <input
+        required
+        maxlength="10"
+        type="text"
+        placeholder="What is your ID?"
+      />
+      <input type="submit" value="Login" />
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
   </body>
 </html>
