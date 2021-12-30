@@ -42,3 +42,12 @@ const quotes = [
     author: "Christy Mathewson",
   },
 ];
+
+const quote = document.querySelector("#qoutes span:first-child");
+const author = document.querySelector("#qoutes span:last-child");
+
+function getRandomQuotes() {
+  quotes.quote[Math.floor(Math.random() * 10)];
+  quotes.author[Math.floor(Math.random() * 10)];
+}
+console.log(quotes[Math.floor(Math.random() * 10)]);
