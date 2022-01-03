@@ -61,6 +61,6 @@ const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = todayQuote.quote;
 author.innerText = todayQuote.author;
 
-const wallPaper = document.createElement("img");
-wallPaper.src = `img/${todayQuote.bg}`;
-document.body.append(wallPaper);
+const quoteImg = document.createElement("img");
+quoteImg.src = `img/${todayQuote.bg}`;
+document.body.append(quoteImg);
