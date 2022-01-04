@@ -13,9 +13,9 @@ function todos() {
 
 function deleteBtn(event) {
   const li = event.target.parentElement;
-  console.log(li.id);
   li.remove();
-  localStorage.removeItem(dltTodo);
+  todoArr = todoArr.filter(todo => todo.id !== parseInt(li.id));
+  todos();
 }
 
 function viewTodo(newTodo) {
