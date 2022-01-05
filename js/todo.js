@@ -11,11 +11,16 @@ function todos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(todoArr));
 }
 
+// function dltFilter(todoArr, li) {
+//   return todoArr.id !== Number(li.id);
+// }
+
 function deleteBtn(event) {
   const li = event.target.parentElement;
-  li.remove();
-  todoArr = todoArr.filter(todo => todo.id !== parseInt(li.id));
+  // todoArr = todoArr.filter(todo => dltFilter(todo, li));
+  todoArr = todoArr.filter(todo => todo.id !== Number(li.id));
   todos();
+  li.remove();
 }
 
 function viewTodo(newTodo) {
